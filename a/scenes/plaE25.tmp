@@ -10,11 +10,9 @@ radius = 4.0
 script = ExtResource("1_ldyhe")
 
 [node name="caracter" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -1)
 sprite_frames = ExtResource("2_82wm7")
-animation = &"idle_down"
+animation = &"sword_down"
 autoplay = "down"
-frame_progress = 0.731954
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)

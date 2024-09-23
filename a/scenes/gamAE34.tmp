@@ -726,11 +726,11 @@ texture_under = ExtResource("3_mgewa")
 texture_progress = ExtResource("3_y0u13")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
-offset_left = 34.5
-offset_top = 16.0
-offset_right = 115.5
-offset_bottom = 55.0
-scale = Vector2(0.767498, 0.812706)
+offset_left = 35.0
+offset_top = 26.0
+offset_right = 110.0
+offset_bottom = 66.0
+scale = Vector2(0.544395, 0.515981)
 bbcode_enabled = true
 text = "Stamina"
 fit_content = true
