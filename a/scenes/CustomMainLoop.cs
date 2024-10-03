@@ -39,7 +39,11 @@ public partial class CustomMainLoop : SceneTree
 		public override bool _Process(double delta)
 	{
 		// Return true to end the main loop.
-		return Input.GetMouseButtonMask() != 0 || Input.IsKeyPressed(Key.Escape);
+		if (Input.IsKeyPressed(Key.Escape)) // ui_cancel est généralement mappé à Échap
+		{
+			_Finalize();
+		}
+		return Input.IsKeyPressed(Key.Escape);
 	}
 	
 	 private void _Finalize()
