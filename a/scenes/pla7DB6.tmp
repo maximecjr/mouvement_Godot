@@ -9,7 +9,7 @@
 radius = 4.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ujnfi"]
-size = Vector2(10, 10)
+size = Vector2(8, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m23mr"]
 size = Vector2(18, 14)
@@ -22,8 +22,8 @@ position = Vector2(0, -1)
 sprite_frames = ExtResource("2_82wm7")
 animation = &"sword_side"
 autoplay = "down"
-frame = 3
-frame_progress = 1.0
+frame = 1
+frame_progress = 0.264425
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)
@@ -42,6 +42,7 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2(10, 4)
 shape = SubResource("RectangleShape2D_m23mr")
 
 [connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]
