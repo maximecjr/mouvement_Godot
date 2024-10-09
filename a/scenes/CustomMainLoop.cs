@@ -47,15 +47,15 @@ public partial class CustomMainLoop : SceneTree
 
 	public override bool _Process(double delta)
 	{
-		// Save the game when the player presses 'G'
-		if (Input.IsKeyPressed(Key.G))
+		// Save the game when the player presses 'r' share xbox, microphone ps5,  capture nintendo
+		if (Input.IsActionPressed("ui_save"))
 		{
 			GD.Print("Progress bar :  " + _progressBar);
 			_saveManager.SaveGame("savegame.json", _player, _progressBar);
 		}
 
-		// Quit and save when the player presses Escape
-		if (Input.IsKeyPressed(Key.Escape))
+		// Quit and save when the player presses Escape, select sony, back xbox ,- nintendo
+		if (Input.IsActionPressed("ui_quit"))
 		{
 			_saveManager.SaveGame("savegame.json", _player, _progressBar);
 			_Finalize();
