@@ -382,7 +382,7 @@ texture = ExtResource("2_yuh1u")
 [sub_resource type="TileSet" id="TileSet_mxssr"]
 sources/0 = SubResource("TileSetAtlasSource_31srd")
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" groups=["Persist"]]
 
 [node name="sol" type="TileMap" parent="."]
 position = Vector2(39, 26)
